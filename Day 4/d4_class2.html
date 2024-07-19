@@ -1,0 +1,192 @@
+<!Bismillah>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style type="text/css">
+	.row{
+		display: flex;
+		justify-content: space-evenly;
+	    
+	}
+</style>
+<body>
+	<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
+	<div class="container bg-primary" >
+		<div class="row" style="background-color: lightgrey;">
+			<div class="col"><canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+			<script>
+			const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+			const yValues = [55, 49, 44, 24, 15];
+			const barColors = [
+			  "#b91d47",
+			  "#00aba9",
+			  "#2b5797",
+			  "#e8c3b9",
+			  "#1e7145"
+			];
+
+			new Chart("myChart", {
+			  type: "pie",
+			  data: {
+			    labels: xValues,
+			    datasets: [{
+			      backgroundColor: barColors,
+			      data: yValues
+			    }]
+			  },
+			  options: {
+			    title: {
+			      display: true,
+			      text: "World Wide Wine Production 2018"
+			    }
+			  }
+			});
+			</script>
+		        </div>
+		        <div class="col"><h1><style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table></h1>
+        	
+        </div>
+		</div>
+
+		<div class="row" style="background-color: lightblue; margin: 20px 0;">
+			<div class="col"><!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<h2>Table Caption</h2>
+<p>To add a caption to a table, use the caption tag.</p>
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+</div>
+			<div class="col">2feedcdc</div>
+		</div>
+
+
+	    <div class="row" style="background-color: lightgrey; margin: 20px 0;">
+			<div class="col"><canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+
+<script>
+const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+const yValues = [55, 49, 44, 24, 15];
+const barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myChart2", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    }
+  }
+});
+</script></div>
+			<div class="col">2cdscsdcsdc</div>
+	</div>
+
+</div>
+
+</body>
+</html>
