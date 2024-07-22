@@ -1,0 +1,35 @@
+<!Bismillah>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>D5</title>
+</head>
+<style type="">
+	button{
+			background: skyblue;
+			border: none;
+			border-radius: 4px;
+		}
+</style>
+    <title>Palindrome Check</title>
+</head>
+<body>
+    <h1>Palindrome Check</h1>
+    <input type="text" id="palindromeInput" placeholder="Enter a string">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="palindromeResult"></p>
+
+    <script>
+        function checkPalindrome() {
+            let str = document.getElementById("palindromeInput").value;
+            let reversedStr = str.split('').reverse().join('');
+            let result = str === reversedStr ? `${str} is a palindrome.` : `${str} is not a palindrome.`;
+            document.getElementById("palindromeResult").innerText = result;
+        }
+    </script>
+
+	
+</script>
+</html>
