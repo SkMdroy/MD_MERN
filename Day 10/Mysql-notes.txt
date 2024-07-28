@@ -1,0 +1,15 @@
+('rahul','1999-01-01',987.654,'nellore','9876543210','at@gmail.com') ~ InsertSELECT * FROM student WHERE address='Guntur'
+SELECT * FROM student WHERE salary=999.999
+SELECT * FROM student WHERE sname LIKE 's%' ~ to see name starts with s
+SELECT * FROM student WHERE sname LIKE '%d' ~ to see name ends with D
+SELECT * FROM student WHERE sname LIKE 's%d'; ~ starts with s and ends with D
+SELECT adress COUNT(*) FROM student GROUP BY address; ~ to display
+select address , COUNT(*),GROUP_CONCAT(sname) from student GROUP by address ~ to count and display
+select address , COUNT(*)as total,GROUP_CONCAT(sname) as all_name 
+from student GROUP by address ~~~ to dispaly data of specific
+
+In Cmd 
+db.createCollection('student');
+db.student.insert({sname:"Md" , age:20 , phn:1234567809 , email:"md786@gmail.com" , salary:15000 , address:"Guntur"})
+db.customer.insertMany({_id:2,name:"abu" , age:90 ,salary:18000 , address:"goa",dob:"1924-01-30"},{_id:3,name:"katti",address:"chennai",dob:"1990-10-10"},{_id:4,name:"pradip",dob:"7986-12-12",address:"andhra"})
+
