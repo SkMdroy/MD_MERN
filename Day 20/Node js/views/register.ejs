@@ -1,0 +1,26 @@
+<style>
+.form{
+	border-style: solid;
+	display: flex;
+	justify-content: center;
+ </style>
+
+<hl>Sign up form</h1>
+<div class="form">
+<form  action="/register" method="POST">
+    <input type="text" name="username" placeholder="username">
+
+    <input type="password" name="password" placeholder="password">
+
+    <input type="number" name="ages" placeholder="age">
+
+    <!--ages should mention in server body-parser -->
+
+    <input type="date" name="dob" placeholder="dob">
+
+	<input type="email" name="email" placeholder="email">
+
+
+	<button>Submit</button>
+</form>
+</div>
