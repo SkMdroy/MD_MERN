@@ -1,83 +1,61 @@
-import React, { Component } from 'react';
-import './index.css';
+import logo from './logo.svg';
+import './App.css';
 
-class Fruits extends React.Component {
-  render() {
-    return (
-      <div style={{ display: 'flex', justifyContent: 'space-evenly'}}>
-        <LoginForm />
-        <RegisterForm />
+function App() {
+  return (
+    <>
+    <h1>LOGIN & REGISTER FORM</h1>
+    <div className="form">
+      <div className="log">
+        <h2>LOGIN</h2>
+          <form>
+            <label>Email </label>
+            <input type="Email" className="fname" placeholder="Enter your email"/><br/>
+            <label>Pwd  </label>
+            <input type="password" className="password" placeholder="Enter password"/><br/>
+            <label>captcha</label>
+            <input type="captcha" className="captcha" placeholder="Enter captcha"/><br/>
+            <button type="submit" value="submit">SUBMIT</button><br/>
+              </form>
+        </div>
+        <div class="reg">
+          <h2>REGISTER</h2>
+          <form>
+            <label>Name</label>
+            <input type="text"className="fname" placeholder="Enter name"/><br/>
+            <label>Email</label>
+            <input type="Email"className="Email" placeholder="Enter email"/><br/>
+            <label>Password</label>
+            <input type="password" className="password" placeholder="enter password"/><br/>
+            <label>Confirm</label>
+            <input type="Confirm" className="password" placeholder="confirm password"/><br/>
+            <label>Choose Country</label>
+            <select>
+                  <option>INDIA</option>
+                  <option>UK</option>
+                  <option>UAE</option>
+                  <option>KOREA</option>
+                  <option>USA</option>
+      
+            </select><br/>
+                <input type="radio" className="fav_language" value="yes"/>yes
+                <input type="radio" className="fav_language" value="no"/>no<br/>
+            <input type=""  placeholder="Enter captcha"/>
+            <label>captcha</label>
+            <input type="captcha" className="captcha" placeholder="Enter data"/>
+            
+            <input type="checkbox" id="c" className="c" value="correct"/>Data is correct
+            <button type="submit" value="REGISTER">REGISTER</button><br/>
+    
+    
+          </form>
+        </div>
       </div>
-    );
-  }
+    
+      </>
+      
+  );
 }
 
-class LoginForm extends Component {
-  render() {
-    return (
-      <form id="loginForm">
-        <h2 style={{ textAlign: 'center' }}>LOGIN</h2>
-        <div style={{ display: 'grid', justifyContent: 'space-evenly', border: '10px', padding: '10px 30px 10px 35px' }}>
-          <div style={{ borderStyle: 'ridge', padding: '40px' }}>
-            <label htmlFor="newUsername">Username:</label>
-            <input type="text" id="newUsername" name="newUsername" required /><br /><br />
-            <label htmlFor="Password">Password:</label>
-            <input type="password" id="Password" name="Password" required /><br /><br />
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <button type="button">Login</button>
-            </div>
-          </div>
-        </div>
-      </form>
-    );
-  }
-}
 
-class RegisterForm extends Component {
-  constructor() {
-    super();
-    this.state = {
-      username: '',
-      email: '',
-      password: '',
-      confirmPassword: ''
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({ [event.target.name]: event.target.value });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-    console.log('Register form submitted:', this.state);
-    // Add registration logic here
-  }
-
-  render() {
-    return (
-      <form id="registerForm" onSubmit={this.handleSubmit}>
-        <h2 style={{ textAlign: 'center' }}>REGISTER</h2>
-        <div style={{ display: 'grid', justifyContent: 'space-evenly', border: '10px', padding: '10px 30px 10px 35px' }}>
-          <div style={{ borderStyle: 'ridge', padding: '40px' }}>
-            <label htmlFor="username">Username:</label>
-            <input type="text" id="username" name="username" value={this.state.username} onChange={this.handleChange} required /><br /><br />
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" value={this.state.email} onChange={this.handleChange} required /><br /><br />
-            <label htmlFor="password">Password:</label>
-            <input type="password" id="password" name="password" value={this.state.password} onChange={this.handleChange} required /><br /><br />
-            <label htmlFor="confirmPassword">Confirm Password:</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" value={this.state.confirmPassword} onChange={this.handleChange} required /><br /><br />
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
-              <button type="submit">Register</button>
-            </div>
-          </div>
-        </div>
-      </form>
-    );
-  }
-}
-
-export default Fruits;
+export default App;
