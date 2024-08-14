@@ -73,7 +73,7 @@ const App = () => {
     <div style={styles.container}>
       <h1 style={styles.heading}>CRUD Operations</h1>
       <div style={styles.formContainer}>
-        <h2 style={styles.subHeading}>Add New Item</h2>
+        <h2 style={styles.subHeading}>Insert Data</h2>
         <div style={styles.inputGroup}>
           <input type="number" name="empid" value={newItem.empid} onChange={handleChange} placeholder="Enter empid" style={styles.input} />
           <input type="text" name="username" value={newItem.username} onChange={handleChange} placeholder="Enter username" style={styles.input} />
@@ -160,7 +160,7 @@ const App = () => {
 
 const styles = {
   container: {
-    maxWidth: '800px',
+    maxWidth: '1000px',
     margin: '0 auto',
     padding: '20px',
     fontFamily: 'Arial, sans-serif',
@@ -185,7 +185,7 @@ const styles = {
   inputGroup: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-    gridGap: '10px',
+    gridGap: '20px',
   },
   input: {
     padding: '10px',
@@ -199,8 +199,8 @@ const styles = {
   },
   addButton: {
     padding: '10px 20px',
-    backgroundColor: '#FF9933', // Saffron color
-    color: '#fff',
+    backgroundColor: 'gray', // Saffron color
+    color: 'black',
     border: 'none',
     borderRadius: '3px',
     cursor: 'pointer',
@@ -209,7 +209,7 @@ const styles = {
     marginTop: '10px',
   },
   addButtonHover: {
-    backgroundColor: '#e68a00', // Darker saffron color
+    backgroundColor: 'gray', // Darker saffron color
     transform: 'scale(1.05)',
   },
   saveButton: {
@@ -243,7 +243,7 @@ const styles = {
   },
   editButton: {
     padding: '10px 20px',
-    backgroundColor: '#FF9933', // Saffron color
+    backgroundColor: 'green', // Saffron color
     color: '#fff',
     border: 'none',
     borderRadius: '3px',
@@ -253,21 +253,21 @@ const styles = {
     marginRight: '5px',
   },
   editButtonHover: {
-    backgroundColor: '#e68a00', // Darker saffron color
+    backgroundColor: 'blue', 
     transform: 'scale(1.05)',
   },
   deleteButton: {
     padding: '10px 20px',
-    backgroundColor: '#000080', // Navy blue color
+    backgroundColor: 'red', // Navy blue color
     color: '#fff',
     border: 'none',
     borderRadius: '3px',
     cursor: 'pointer',
     fontSize: '14px',
-    transition: 'background-color 0.3s, transform 0.2s',
+    transition: 'background-color 0.3s, transform 0.1s',
   },
   deleteButtonHover: {
-    backgroundColor: '#00004d', // Darker navy blue color
+    backgroundColor: 'red',
     transform: 'scale(1.05)',
   },
   table: {
